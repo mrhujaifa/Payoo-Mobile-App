@@ -10,7 +10,7 @@ loginBtn.addEventListener("click", function (event) {
 
   let convartedAccountNum = parseInt(accoutNumber);
 
-  if (accoutNumber.length === 11 && convartedAccountNum === 01608215377) {
+  if (accoutNumber.length === 11 && convartedAccountNum === 1608215377) {
     if (convartedPIN === 2343 && PinNumber.length === 4) {
       window.location.href = "./main.html";
     } else {
