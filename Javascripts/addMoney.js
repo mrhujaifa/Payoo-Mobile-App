@@ -11,14 +11,18 @@ addMoneybtn.addEventListener("click", function (event) {
   let mainBalance = document.getElementById("mainBalance").innerText;
   let convertedmainBalance = parseFloat(mainBalance);
 
+  if (isNaN(convertedAmount)) {
+    alert("Please enter just a number for the amount!");
+    return
+  }
+
   if (amount && PIN) {
     if (convertedPin === 2343) {
       const totalAmount = convertedmainBalance + convertedAmount;
       document.getElementById("mainBalance").innerText = totalAmount;
     } else {
-      alert('invlid pin number ')
+      alert("invlid pin number ");
     }
-    
   } else {
     alert("Enter your amouont!!!");
   }
