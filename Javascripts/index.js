@@ -12,7 +12,7 @@ loginBtn.addEventListener("click", function (event) {
 
   if (accoutNumber.length === 11 && convartedAccountNum === 01608215377) {
     if (convartedPIN === 2343 && PinNumber.length === 4) {
-      window.location.href = "./main.html";
+      window.location.href = "/html/main.html";
     } else {
       alert("Incorrect your PIN number. Please try again later!");
     }
