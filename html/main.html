@@ -36,7 +36,7 @@
           <div class="flex items-center lg:gap-3">
             <img class="w-16 lg:w-auto" src="/assets/Group.png" alt="" />
             <div>
-              <h1 class="font-bold text-xl">$<span>45000</span></h1>
+              <h1 class="font-bold text-xl">$<span id="mainBalance">45000</span></h1>
               <span class="text-sm">Available Balance</span>
             </div>
           </div>
@@ -105,7 +105,11 @@
         <div class="bg-white shadow p-6 space-y-3 rounded-2xl">
           <label for="" class="text-[17px] font-medium"> Select A Bank</label>
           <br />
-          <select name="" id="" class="rounded-[25px] h-14 bg-gray-100 border p-2 w-80 lg:w-[500px] ">
+          <select
+            name=""
+            id=""
+            class="rounded-[25px] h-14 bg-gray-100 border p-2 w-80 lg:w-[500px]"
+          >
             <option value="" disabled selected>Select your Bank</option>
             <option value="">Bkash</option>
             <option value="">Nagad</option>
@@ -117,27 +121,38 @@
           ><br />
           <input
             type="text"
+            value="01608215377"
             class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 bg-gray-100"
             placeholder="Enter 11 digit account number"
           /><br />
           <label for="" class="text-[17px] font-medium">Amount to Add</label
           ><br />
           <input
+            id="Amount"
             type="text"
             class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 bg-gray-100"
             placeholder="Add Amount to withdraw"
           />
-          <label for="" class="text-[17px] font-medium">Pin Number</label><br>
+          <label for="" class="text-[17px] font-medium">Pin Number</label><br />
           <input
+            id="pin"
+            value="2343"
             type="text"
             class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 bg-gray-100"
             placeholder="Enter 4 digit pin number"
           />
           <div>
-            <button class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 font-bold text-lg bg-blue-600 text-white hover:bg-green-300 hover:text-white transition-all">Add Money</button>
+            <button
+              id="addMoneyBtn"
+              class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 font-bold text-lg bg-blue-600 text-white hover:bg-green-300 hover:text-white transition-all"
+            >
+              Add Money
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="/Javascripts/addMoney.js"></script>
   </body>
 </html>
