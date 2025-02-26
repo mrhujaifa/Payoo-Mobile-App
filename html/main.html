@@ -36,7 +36,9 @@
           <div class="flex items-center lg:gap-3">
             <img class="w-16 lg:w-auto" src="/assets/Group.png" alt="" />
             <div>
-              <h1 class="font-bold text-xl">$<span id="mainBalance">45000</span></h1>
+              <h1 class="font-bold text-xl">
+                $<span id="mainBalance">45000</span>
+              </h1>
               <span class="text-sm">Available Balance</span>
             </div>
           </div>
@@ -62,12 +64,14 @@
         <!-- hero card area -->
         <div class="grid grid-cols-3 gap-3 lg:gap-3 mt-6">
           <div
+            id="addMoney-card"
             class="p-5 text-center cursor-pointer hover:bg-blue-300 hover:text-white text-[14px] border rounded-xl"
           >
             <img class="m-auto" src="/assets/wallet1.png" alt="" />
             <span>Add Money</span>
           </div>
           <div
+            id="cashOut-card"
             class="p-5 text-center cursor-pointer hover:bg-blue-200 hover:text-white text-[14px] border rounded-xl"
           >
             <img class="m-auto" src="/assets/send1.png" alt="" />
@@ -100,7 +104,8 @@
           </div>
         </div>
       </div>
-      <div class="p-2">
+      <!-- add money from -->
+      <div class="p-2" id="addMoney-form">
         <h1 class="font-bold text-xl my-3 mx-2">Add Money</h1>
         <div class="bg-white shadow p-6 space-y-3 rounded-2xl">
           <label for="" class="text-[17px] font-medium"> Select A Bank</label>
@@ -151,8 +156,50 @@
           </div>
         </div>
       </div>
+      <!-- cash out from -->
+      <div class="p-2" id="cashOut-form">
+        <h1 class="font-bold text-xl my-3 mx-2">Cash Out</h1>
+        <div class="bg-white shadow p-6 space-y-3 rounded-2xl">
+          <label for="" class="text-[17px] font-medium"
+            >Bank Account Number</label
+          ><br />
+          <input id="cashOutAccoutNum"
+            type="text"
+            value="01608215377"
+            class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 bg-gray-100"
+            placeholder="Enter 11 digit account number"
+          /><br />
+          <label for="" class="text-[17px] font-medium"
+            >Amount to withdraw</label
+          ><br />
+          <input
+            id="cashOutAmount"
+            type="text"
+            class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 bg-gray-100"
+            placeholder="Add Amount to withdraw"
+          />
+          <label for="" class="text-[17px] font-medium">Pin Number</label><br />
+          <input
+            id="cashOutPin"
+            value="2343"
+            type="text"
+            class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 bg-gray-100"
+            placeholder="Enter 4 digit pin number"
+          />
+          <div>
+            <button
+              id="cashOutBtn"
+              class="border rounded-[25px] p-2.5 w-80 lg:w-[500px] h-14 font-bold text-lg bg-blue-600 text-white hover:bg-green-300 hover:text-white transition-all"
+            >
+              Cash Out
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <script src="/Javascripts/toggle.js"></script>
     <script src="/Javascripts/addMoney.js"></script>
+    <script src="/Javascripts/cashOut.js"></script>
   </body>
 </html>

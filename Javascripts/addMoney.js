@@ -24,6 +24,6 @@ addMoneybtn.addEventListener("click", function (event) {
       alert("invlid pin number ");
     }
   } else {
-    alert("Enter your amouont!!!");
+    alert("Enter your amount!!!");
   }
 });
